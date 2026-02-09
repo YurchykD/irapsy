@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ірина Чехівська — Психолог</title>
+  <meta name="description" content="Психолог. Гештальт-підхід. Онлайн консультації." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-grid">
+
+      <!-- Desktop nav (left) -->
+      <nav class="nav nav--desktop" aria-label="Навігація">
+        <a href="#when" class="nav__link">Коли варто йти до психолога?</a>
+        <a href="#about" class="nav__link">Про мене</a>
+        <a href="#how" class="nav__link">Як проходить консультація?</a>
+        <a href="#faq" class="nav__link">Питання</a>
+      </nav>
+
+      <!-- Brand -->
+      <a class="brand" href="#top" aria-label="На початок">
+        <span class="brand__name">Ірина Чехівська</span>
+      </a>
+
+      <!-- Socials (desktop) -->
+      <div class="socials socials--desktop" aria-label="Соціальні мережі">
+        <a class="icon-btn" href="https://www.linkedin.com/in/iryna-chekhivska-559bb635a/" aria-label="LinkedIn"
+          title="LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5ZM.5 8.5H4.5V23H.5V8.5ZM8.5 8.5H12.3V10.5H12.35C12.88 9.55 14.18 8.55 16.08 8.55C20.16 8.55 20.9 11.14 20.9 14.5V23H16.9V15.2C16.9 13.34 16.86 11 14.35 11C11.81 11 11.42 12.94 11.42 15.08V23H7.42V8.5H8.5Z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://t.me/ir_chekh" aria-label="Telegram" title="Telegram" target="_blank"
+          rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M22.5 2.7 1.8 10.7c-1 .4-1 1.8.1 2.1l5.2 1.6 2 6.2c.3 1 1.6 1.2 2.2.4l3-3.7 5.7 4.2c.8.6 2 .1 2.2-.9l3-16.6c.2-1.2-1-2.1-2.2-1.6zM8.1 13.9l10.8-6.7c.2-.1.4.2.2.4L10.2 15c-.3.3-.5.6-.6 1l-.4 2.7-1.3-4.1c-.1-.3.1-.6.2-.7z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://www.instagram.com/i.c.psy/" aria-label="Instagram" title="Instagram"
+          target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile header (burger) -->
+      <div class="header-mobile">
+        <button class="burger" type="button" aria-label="Відкрити меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div class="mobile-panel" hidden>
+      <nav class="nav nav--mobile" aria-label="Мобільна навігація">
+        <a href="#when" class="nav__link">Коли варто йти до психолога?</a>
+        <a href="#about" class="nav__link">Про мене</a>
+        <a href="#how" class="nav__link">Як проходить консультація?</a>
+        <a href="#faq" class="nav__link">Питання</a>
+        <button class="nav__link nav__link--cta js-open-booking" type="button">Запис на консультацію</button>
+      </nav>
+
+      <div class="socials socials--mobile" aria-label="Соціальні мережі">
+        <a class="icon-btn" href="https://www.instagram.com/i.c.psy/" aria-label="Instagram" title="Instagram"
+          target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://t.me/ir_chekh" aria-label="Telegram" title="Telegram" target="_blank"
+          rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M22.5 2.7 1.8 10.7c-1 .4-1 1.8.1 2.1l5.2 1.6 2 6.2c.3 1 1.6 1.2 2.2.4l3-3.7 5.7 4.2c.8.6 2 .1 2.2-.9l3-16.6c.2-1.2-1-2.1-2.2-1.6zM8.1 13.9l10.8-6.7c.2-.1.4.2.2.4L10.2 15c-.3.3-.5.6-.6 1l-.4 2.7-1.3-4.1c-.1-.3.1-.6.2-.7z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://viber.me/+380977775538" aria-label="Viber" title="Viber" target="_blank"
+          rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.5 3.6A9.7 9.7 0 0 0 12 0C6.3 0 1.6 4.7 1.6 10.4c0 1.7.4 3.3 1.2 4.8L1 23l7.9-1.7c1 .3 2 .4 3.1.4 5.7 0 10.4-4.7 10.4-10.4 0-2.8-1.1-5.4-2.9-7.7zM12 19.7c-1 0-2-.2-2.9-.5l-.6-.2-4.7 1 1-4.6-.3-.6a8.2 8.2 0 0 1-1-4.4C3.5 6 7.4 2.1 12 2.1s8.5 3.9 8.5 8.5-3.9 9.1-8.5 9.1zm4.8-6.1c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.2s-.8.9-1 .9-.4.1-.7-.1c-.3-.1-1.3-.5-2.5-1.6-.9-.8-1.6-1.8-1.8-2.1s0-.5.1-.7c.1-.1.3-.4.4-.5.1-.2.1-.3.2-.5.1-.2 0-.4 0-.5 0-.1-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.7.3-.2.2-1 1-1 2.5s1 2.9 1.1 3.1c.1.2 2 3.2 4.9 4.5.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.1-1.4-.1-.2-.3-.2-.6-.3z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero" aria-label="Головний екран">
+      <div class="hero__wave" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__photo">
+          <!-- Замінити на своє фото -->
+          <img src="assets/ira1.jpeg" alt="Фото Ірини Чехівської" loading="lazy" />
+        </div>
+
+        <div class="hero__card">
+          <h1 class="about-title"><span class="accent">Ірина Чехівська</span></h1>
+          <h1 class="hero__title">Психолог</h1>
+          <p class="hero__lead">До своїх почуттів варто прислухатись</p>
+          <p class="hero__sub">Зрозумій свої емоції разом зі мною</p>
+          <div class="hero__meta">
+            <div class="meta-item">
+              <span class="meta-item__label">Ціна:</span>
+              <span class="meta-item__value">€20.00/50хв</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-item__label">Формат:</span>
+              <span class="meta-item__value">Онлайн</span>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary js-open-booking" type="button">Запис на консультацію</button>
+            <a class="btn btn--ghost" href="#about">Детальніша інформація</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHEN -->
+    <section id="when" class="section">
+      <div class="container">
+        <h2 class="section__title">Коли варто йти до психолога?</h2>
+        <p class="section__subtitle">Можливо, ви впізнаєте себе в цьому…</p>
+
+        <div class="grid-cards">
+          <article class="card card--mini">
+            <div class="card__media">
+              <img src="assets/course4.png" alt="" loading="lazy" />
+            </div>
+            <h3 class="card__title">Ви прокидаєтесь втомлені</h3>
+            <p class="card__text">Ви ніби спите, але не відпочиваєте. Зранку зʼявляється напруга, тривога або відчуття,
+              що сил уже немає.</p>
+          </article>
+
+          <article class="card card--mini">
+            <div class="card__media">
+              <img src="assets/course2.png" alt="" loading="lazy" />
+            </div>
+            <h3 class="card__title">Ви відчуваєте вигорання</h3>
+            <p class="card__text">Зʼявляється втома від усього, що раніше було важливим. Навіть прості речі потребують
+              багато зусиль.</p>
+          </article>
+
+          <article class="card card--mini">
+            <div class="card__media">
+              <img src="assets/course1.png" alt="" loading="lazy" />
+            </div>
+            <h3 class="card__title">Ваше тіло здається важким</h3>
+            <p class="card__text">Ви помічаєте напругу, скутість або втому в тілі. Навіть звичні справи й розмови можуть
+              даватися складніше.</p>
+          </article>
+
+          <article class="card card--mini">
+            <div class="card__media">
+              <img src="assets/course3.png" alt="" loading="lazy" />
+            </div>
+            <h3 class="card__title">Різкі перепади настрою</h3>
+            <p class="card__text">Настрій може швидко змінюватися без зрозумілої причини. В один момент є енергія, а в
+              інший - виснаженість або роздратування.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section section--alt">
+      <div class="container about-grid">
+        <div class="about-photo">
+          <img src="assets/ira2.jpeg" alt="Фото Ірини" loading="lazy" />
+        </div>
+
+        <div class="about-text">
+          <p class="kicker">ПРО МЕНЕ</p>
+          <h2 class="about-title">Ваш Психолог - <span class="accent">Ірина Чехівська</span></h2>
+
+          <p>
+            Я підтримую людей у процесі пізнання себе, своїх почуттів і потреб, допомагаю знаходити опору всередині та
+            будувати більш усвідомлений контакт із собою й іншими.
+          </p>
+
+          <p class="muted">
+            Я працюю в підході гештальт-терапії, де важливі щирість, присутність “тут і тепер” та повага до унікального
+            досвіду кожної людини.
+            Для мене терапія - це безпечний простір, у якому можна бути собою, досліджувати складні переживання і
+            поступово знаходити власні відповіді.
+          </p>
+
+          <p class="muted">
+            Наразі я починаю проводити індивідуальні консультації та паралельно навчаюся на курсах гештальт-терапії,
+            постійно поглиблюючи свої знання й навички.
+          </p>
+
+          <div class="list-box">
+            <h3 class="list-box__title">Освіта та досвід</h3>
+            <ul>
+              <li>Вища освіта за напрямом "Практична психологія"</li>
+              <li>3 роки особистої терапії</li>
+              <li>Навчання на курсах гештальт-терапії (триває)</li>
+              <li>Початок практики індивідуальних психологічних консультацій</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY ME -->
+    <section class="section">
+      <div class="container why-grid">
+        <div class="why-head">
+          <p class="kicker">ЧОМУ ОБРАТИ МЕНЕ?</p>
+          <h2 class="section__title section__title--left">Чому варто обрати мене як психолога?</h2>
+        </div>
+
+        <div class="why-cards">
+          <article class="why-card">
+            <h3>Реальний і живий контакт</h3>
+            <p>Я працюю не за шаблоном, а з живою людиною поруч. Важливо бути уважною до вашого досвіду та того, що
+              відбувається з вами зараз.</p>
+          </article>
+
+          <article class="why-card">
+            <h3>Безпечна та спокійна структура</h3>
+            <p>Консультації проходять у зрозумілому, підтримуючому форматі. Без поспіху, тиску чи “правильних
+              відповідей”.</p>
+          </article>
+
+          <article class="why-card">
+            <h3>Фокус на усвідомленні та виборі</h3>
+            <p>У гештальт-підході ви - експерт свого життя. Я допомагаю краще почути себе й знайти власні відповіді.</p>
+          </article>
+
+          <article class="why-card">
+            <h3>Простір без оцінювання</h3>
+            <p>Тут не потрібно бути “зручним” чи “правильним”. Є місце для різних почуттів, сумнівів і запитань.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW -->
+    <section id="how" class="section section--alt">
+      <div class="container">
+        <p class="kicker center">ЩО ПОТРІБНО ЗНАТИ</p>
+        <h2 class="section__title center">Як проходить консультація?</h2>
+
+        <div class="how-grid">
+          <article class="how-card">
+            <img src="assets/cons1.png" alt="" loading="lazy" onerror="this.src='assets/how-1.jpg'" />
+            <h3>Говоримо</h3>
+            <p>У центрі консультації - жива розмова та уважний контакт. Ми досліджуємо те, що відбувається з вами тут і
+              тепер.</p>
+          </article>
+
+          <article class="how-card">
+            <img src="assets/cons2.png" alt="" loading="lazy" />
+            <h3>Досліджуємо досвід</h3>
+            <p>Допомагаю краще усвідомити себе, помічати повторювані патерни та внутрішні конфлікти - без тиску і
+              “порад”.</p>
+          </article>
+
+          <article class="how-card">
+            <img src="assets/cons3.png" alt="" loading="lazy" />
+            <h3>Поступово рухаємось до змін</h3>
+            <p>Зміни відбуваються у вашому темпі. Через усвідомлення і підтримку з’являється більше опори та ясності.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq">
+      <h2>Поширені запитання</h2>
+
+      <div class="faq-grid">
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Як проходить перша консультація?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Перша зустріч - це знайомство.
+              Ми говоримо про ваш запит, очікування та те, що привело вас у терапію.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            З якими запитами можна звертатись?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Тривога, стосунки, самооцінка, внутрішні конфлікти, адаптація в еміграції
+              потреба краще зрозуміти себе.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Скільки потрібно зустрічей?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Кількість сесій індивідуальна й залежить від вашого запиту.
+              Ми регулярно обговорюємо процес і ваші відчуття.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Чи можу я не відповідати на питання, якщо не готовий(а)?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Так. Ви завжди самі вирішуєте, про що говорити, а про що - ні. Терапія не передбачає примусу.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Як зрозуміти, що терапія мені підходить?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Важливі відчуття після сесій: чи стало зрозуміліше, легше або спокійніше. Ми регулярно обговорюємо ваші
+              враження і процес.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" type="button">
+            Чи потрібно виконувати завдання між сесіями?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Домашні завдання не є обовʼязковими. Якщо вони зʼявляються, то лише як підтримка вашого процесу, а не
+              обовʼязок.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--alt">
+      <div class="container contact">
+        <h2 class="section__title center">Запис на консультацію</h2>
+        <p class="section__subtitle center">Напишіть мені зручним для вас способом - я відповім і ми домовимось про
+          зустріч.</p>
+        <!-- Instagram icon -->
+        <div class="contact-icons" aria-label="Контакти">
+          <a class="icon-big" href="https://www.instagram.com/i.c.psy/" target="_blank" rel="noopener"
+            aria-label="Instagram" target="_blank" rel="noopener">
+            <span class="icon-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+              </svg>
+            </span>
+            <span>Instagram</span>
+          </a>
+          <!-- Telegram icon -->
+          <a class="icon-big" href="https://t.me/ir_chekh" target="_blank" rel="noopener" aria-label="Telegram"
+            target="_blank" rel="noopener">
+            <span class="icon-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M22.5 2.7 1.8 10.7c-1 .4-1 1.8.1 2.1l5.2 1.6 2 6.2c.3 1 1.6 1.2 2.2.4l3-3.7 5.7 4.2c.8.6 2 .1 2.2-.9l3-16.6c.2-1.2-1-2.1-2.2-1.6zM8.1 13.9l10.8-6.7c.2-.1.4.2.2.4L10.2 15c-.3.3-.5.6-.6 1l-.4 2.7-1.3-4.1c-.1-.3.1-.6.2-.7z" />
+              </svg>
+            </span>
+            <span>Telegram</span>
+          </a>
+          <!-- LinkedIn icon -->
+          <a class="icon-big" href="https://www.linkedin.com/in/iryna-chekhivska-559bb635a/" aria-label="LinkedIn"
+            title="LinkedIn" target="_blank" rel="noopener">
+            <span class="icon-wrap">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4.75 3.5a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0ZM.5 7.5h4.5V23H.5V7.5Zm7 0h4.3v2.1h.06c.6-1.1 2.05-2.25 4.22-2.25 4.5 0 5.42 2.96 5.42 6.8V23h-4.5v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.06V23h-4.5V7.5Z" />
+              </svg>
+            </span>
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <div class="footer__brand">
+        <div class="footer__name">Ірина Чехівська</div>
+        <div class="footer__tag">Ваш особистий психолог</div>
+      </div>
+
+      <nav class="footer__nav" aria-label="Навігація в підвалі">
+        <a href="#when">Коли варто йти до психолога?</a>
+        <a href="#about">Про мене</a>
+        <a href="#how">Як проходить консультація?</a>
+        <a href="#faq">Поширені запитання</a>
+      </nav>
+
+      <div class="footer__copy">© <span id="year"></span> Ірина Чехівська. All rights reserved.</div>
+    </div>
+  </footer>
+  <!-- Booking Modal -->
+  <div class="modal" id="bookingModal" hidden aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+      <button class="modal__close" type="button" aria-label="Закрити" data-close-modal>×</button>
+
+      <h2 class="modal__title" id="bookingTitle">Запис на консультацію</h2>
+      <p class="modal__text">
+        Ви можете написати мені у будь-який зручний спосіб, щоб записатися або поставити запитання.
+      </p>
+
+      <div class="modal__icons" aria-label="Контакти">
+        <a class="modal__icon" href="https://www.instagram.com/i.c.psy/" target="_blank" rel="noopener"
+          aria-label="Instagram">
+          <!-- Instagram icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9A3.5 3.5 0 0 0 20 16.5v-9A3.5 3.5 0 0 0 16.5 4h-9Zm10.25 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z" />
+          </svg>
+        </a>
+
+        <a class="modal__icon" href="https://t.me/ir_chekh" target="_blank" rel="noopener" aria-label="Telegram">
+          <!-- Telegram icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M22.5 2.7 1.8 10.7c-1 .4-1 1.8.1 2.1l5.2 1.6 2 6.2c.3 1 1.6 1.2 2.2.4l3-3.7 5.7 4.2c.8.6 2 .1 2.2-.9l3-16.6c.2-1.2-1-2.1-2.2-1.6zM8.1 13.9l10.8-6.7c.2-.1.4.2.2.4L10.2 15c-.3.3-.5.6-.6 1l-.4 2.7-1.3-4.1c-.1-.3.1-.6.2-.7z" />
+          </svg>
+        </a>
+
+        <a class="modal__icon" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener"
+          aria-label="LinkedIn">
+
+          <!-- LinkedIn icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4.75 3.5a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0ZM.5 7.5h4.5V23H.5V7.5Zm7 0h4.3v2.1h.06c.6-1.1 2.05-2.25 4.22-2.25 4.5 0 5.42 2.96 5.42 6.8V23h-4.5v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.06V23h-4.5V7.5Z" />
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
