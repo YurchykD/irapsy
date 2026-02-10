@@ -86,3 +86,45 @@ document.querySelectorAll(".faq-item").forEach((item) => {
     }
   });
 });
+
+// === Instagram link Android fix ===
+(function () {
+  const IG_HOST = 'www.instagram.com';
+
+  document.addEventListener('click', function (e) {
+    const link = e.target.closest('a[href]');
+    if (!link) return;
+
+    let url;
+    try {
+      url = new URL(link.href);
+    } catch {
+      return;
+    }
+
+    // тільки Instagram-профілі
+    if (url.host !== IG_HOST) return;
+
+    const path = url.pathname.replace(/^\/|\/$/g, '');
+    if (!path || path.includes('/')) return;
+
+    const ua = navigator.userAgent || '';
+    const isAndroid = /Android/i.test(ua);
+
+    if (!isAndroid) return;
+
+    // Android → пробуємо апку
+    e.preventDefault();
+
+    const username = path;
+    const appUrl = `instagram://user?username=${username}`;
+    const webUrl = url.href;
+
+    window.location.href = appUrl;
+
+    setTimeout(() => {
+      window.location.href = webUrl;
+    }, 700);
+  });
+})();
+
